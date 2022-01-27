@@ -1,5 +1,4 @@
-
-
+//cypress end to end testing
 describe("Appointments", () => {
   beforeEach(() => {
     cy.request("GET", "/api/debug/reset")
@@ -7,7 +6,7 @@ describe("Appointments", () => {
     cy.visit("/")
 
     cy.contains("Monday");
-  })
+  });
   
   it("should book an interview", () => {
 
@@ -40,9 +39,10 @@ describe("Appointments", () => {
 
     cy.contains(".appointment__card--show", "Lydia Miller-Jones");
     cy.contains(".appointment__card--show", "Tori Malcolm");
-  })
+  });
 
   it("should cancel an interview", () => {
+    
     cy.get("[alt=Delete]")
       .click({ force: true });
   
@@ -54,4 +54,4 @@ describe("Appointments", () => {
     cy.contains(".appointment__card--show", "Archie Cohen")
       .should("not.exist");
   });
-});
+})

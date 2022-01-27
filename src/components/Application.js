@@ -20,7 +20,7 @@ export default function Application(props) {
   const parsedAppointments = dailyAppointments.map(appointment => { 
     const interview = getInterview(state, appointment.interview);
     const interviewersArr = getInterviewersForDay(state, state.day);
-    return (<Appointment {...appointment} key={appointment.id}  interview={interview} interviewers={interviewersArr} bookInterview={bookInterview} cancelInterview={cancelInterview}/> )})
+    return (<Appointment {...appointment} key={appointment.id}  interview={interview} interviewers={interviewersArr} bookInterview={bookInterview} cancelInterview={cancelInterview}/> )});
 
   return (
     <main className="layout">
@@ -37,7 +37,6 @@ export default function Application(props) {
             days={state.days}
             value={state.day}
             onChange={setDay}
-           
           />
         </nav>
         <img

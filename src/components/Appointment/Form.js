@@ -3,19 +3,19 @@ import InterviewerList from "components/InterviewerList";
 import Button from "components/Button";
 
 export default function Form(props) {
+  
   const [student, setStudent] = useState(props.student || "");
   const [interviewer, setInterviewer] = useState(props.interviewer || null);
 
   function reset() {
     setStudent("");
     setInterviewer("");
-  }
+  };
 
   function cancel() {
     reset();
     props.onCancel();
-  }
-  
+  };
   
   return(
     <main className="appointment__card appointment__card--create">
@@ -29,7 +29,6 @@ export default function Form(props) {
             value={student}
             onChange={(event) => setStudent(event.target.value)}
             data-testid="student-name-input"
-           
           />
         </form>
         <InterviewerList 
@@ -45,6 +44,5 @@ export default function Form(props) {
         </section>
       </section>
     </main>
-    
-  )
+  );
 }

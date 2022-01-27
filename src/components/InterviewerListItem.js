@@ -16,7 +16,7 @@ function InterviewerListItem(props) {
       />
       {props.selected && props.name}
     </li>
-  )
+  );
 }
 
 export default InterviewerListItem;

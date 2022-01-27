@@ -1,5 +1,7 @@
 # Interview Scheduler
 
+Is a react application that allow user to view/add/edit/delete appointments.
+
 ## Setup
 
 Install dependencies with `npm install`.
@@ -21,3 +23,10 @@ npm test
 ```sh
 npm run storybook
 ```
+
+## Running Cypress Testing
+
+```sh
+npm run cypress
+```
+![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")

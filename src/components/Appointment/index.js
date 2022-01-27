@@ -39,7 +39,7 @@ export default function Appointment(props) {
         transition(SHOW);
       })
       .catch((err) => {
-        transition(ERROR_SAVE, true)
+        transition(ERROR_SAVE, true);
       });
   }
 
@@ -52,16 +52,16 @@ export default function Appointment(props) {
       transition(DELETING, true);
       props.cancelInterview(props.id)
         .then(()=> {
-          transition(EMPTY)
+          transition(EMPTY);
         })
         .catch(() => {
-          transition(ERROR_DELETE, true)
+          transition(ERROR_DELETE, true);
         });
-    }
+    };
     if (isDelete === false && isConfirm === false) {
-        transition(SHOW)
-      }
-    }  
+        transition(SHOW);
+      };
+    };  
 
   return(
     <article className="appointment">
@@ -83,5 +83,5 @@ export default function Appointment(props) {
        {mode === ERROR_SAVE && <Error message={"Could not save the appointment!"} onClose={() => back(EDIT)}/>}
        {mode === ERROR_DELETE && <Error message={"Could not delete the appointment!"} onClose={() => back(EDIT)} />}
     </article>
-  )
+  );
 }
