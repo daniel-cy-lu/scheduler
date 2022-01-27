@@ -29,6 +29,9 @@ npm run storybook
 ```sh
 npm run cypress
 ```
+
+## Screenshots
+
 ![User is able to view existing interview appointments also the remaining spots in each day of the week](https://github.com/daniel-cy-lu/scheduler/blob/master/screenshots/Screen%20Shot%202022-01-27%20at%205.26.36%20PM%20(2).png?raw=true)
 
 ![User is able to select the day and time he/she is available and click on the add-button on an empty spot to trigger an input form](https://github.com/daniel-cy-lu/scheduler/blob/master/screenshots/Screen%20Shot%202022-01-27%20at%205.27.33%20PM%20(2).png?raw=true)
