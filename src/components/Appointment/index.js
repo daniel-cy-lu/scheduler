@@ -27,20 +27,24 @@ export default function Appointment(props) {
 
   // function save is called in CREATE and EDIT. It updates the database with the new/edit appointment
   function onSave(name, interviewer) {
-    const interview = {
-      student: name,
-      interviewer
-    };
-   
-     transition(SAVING);
-
-     props.bookInterview(props.id, interview)
-      .then(() => {
-        transition(SHOW);
-      })
-      .catch((err) => {
-        transition(ERROR_SAVE, true);
-      });
+    
+      const interview = {
+        student: name,
+        interviewer
+      };
+     
+       transition(SAVING);
+  
+       props.bookInterview(props.id, interview)
+        .then(() => {
+          transition(SHOW);
+        })
+        .catch((err) => {
+          transition(ERROR_SAVE, true);
+        });
+    
+    
+    
   }
 
   //onDelete is use in SHOW and CONFIRM to confirm and delete cancelled appointment
