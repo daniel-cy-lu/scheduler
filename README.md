@@ -6,6 +6,15 @@ Is a react application that allow user to view/add/edit/delete appointments.
 
 Install dependencies with `npm install`.
 
+## Scheduler-API
+
+
+It is recommended to use the following API as the server.
+For setup of the API, please see this link:
+[Scheduler-API Link](https://github.com/lighthouse-labs/scheduler-api)
+
+
+
 ## Running Webpack Development Server
 
 ```sh
@@ -28,6 +37,36 @@ npm run storybook
 
 ```sh
 npm run cypress
+```
+
+## Dependencies
+
+```sh
+axios v0.25.0
+classnames v2.2.6
+normalize.css v8.0.1
+react v16.9.0
+react-dom v16.9.0
+react-hooks-testing-library v0.6.0
+react-scripts v3.0.0
+@testing-library/react-hooks v1.0.4
+```
+
+## Dev Dependencies
+
+```sh
+@babel/core v7.4.3
+@storybook/addon-actions v5.0.10
+@storybook/addon-backgrounds v5.0.10
+@storybook/addon-links v5.0.10
+@storybook/addons v5.0.10
+@storybook/react v5.0.10
+@testing-library/jest-dom v4.0.0
+@testing-library/react v8.0.7
+babel-loader v8.0.5
+node-sass v4.14.0
+prop-types v15.8.1
+react-test-renderer v16.9.0
 ```
 
 ## Screenshots
